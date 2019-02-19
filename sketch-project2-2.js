@@ -19,6 +19,20 @@ class seaSlug{
         this.x = tempX;
         this.y = tempY;
     }
+
+    seaSlugBody(){
+        pop(); {
+            this.ssb = ellipse()
+        } push();
+    }
+
+    seaSlugWings(){
+
+    }
+
+    seaSlugAntennae(){
+
+    }
 }
 
 /*
