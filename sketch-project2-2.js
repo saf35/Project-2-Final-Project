@@ -2,6 +2,7 @@
 Idea: sea slugs/nudibranchs of different, random colors moving across the screen, leaving slime
 Extra: can give birth???
 Extra: fighting slugs?
+Extra: have the slugs move or wiggle in some way
 */
 
 // Current goal: make sea slugs (right now, one type of shape, to keep it simple)
@@ -12,6 +13,8 @@ Questions:
     - How do I translate the antennae so that they are connected to the body, so that all I have to move 
         is the body?
 */ 
+
+let seaslugs = [];
 
 function setup(){
     createCanvas(windowWidth,windowHeight);
@@ -32,7 +35,7 @@ class seaSlug{
         push(); {
             rotate(random()*360); // rotate by a different amount every time
             fill(random()*255,random()*255,random()*255); // fill with random color every time
-            let ssb = ellipse(this.x,this.y,50,15);
+            let ssb = ellipse(mx,my,50,15);
         } pop();
     }
 
