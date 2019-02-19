@@ -9,9 +9,9 @@ Extra: have the slugs move or wiggle in some way
 
 /*
 Questions:
-    - How do I call the images so that they aren't randomly jumping everywhere?
+    - How do I call the images so that they aren't randomly jumping everywhere? Call in setup
     - How do I translate the antennae so that they are connected to the body, so that all I have to move 
-        is the body?
+        is the body? begin/endShape()
 */ 
 
 let seaslugs = [];
@@ -22,7 +22,7 @@ function setup(){
 }
 
 function draw(){
-
+    for(let i )
 }
 
 class seaSlug{
