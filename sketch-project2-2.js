@@ -19,24 +19,28 @@ let seaslugs = [];
 function setup(){
     createCanvas(windowWidth,windowHeight);
     background(0); // so can see slime
+    rectMode(CENTER);
 }
 
 function draw(){
-    for(let i )
+    
 }
 
 class seaSlug{
-    constructor(tempX,tempY){
+    constructor(tempX,tempY,tempR){
         this.x = tempX;
         this.y = tempY;
+        this.r = tempR;
     }
 
-    seaSlugBody(mx,my){ // body and slime
+    seaSlug(mx,my,mr){ // body
+        translate(mx,my);
         push(); {
-            rotate(random()*360); // rotate by a different amount every time
-            fill(random()*255,random()*255,random()*255); // fill with random color every time
-            let ssb = ellipse(mx,my,50,15);
-        } pop();
+            rotate(mr);
+            ellipse(0,0,100,30); // main body of sea slug
+            
+        } translate();
+        pop();
     }
 
     move(){
@@ -45,17 +49,6 @@ class seaSlug{
         if(ssb.y > windowHeight){
             ssb.y = 0;
         }
-    }
-
-    /* seaSlugWings(){
-        may save this for later if have time
-    } */ 
-
-    seaSlugAntennae(){
-        push(); {
-            let ssa1 = ellipse(7,10);
-            let ssa2 = ellipse(7,10);
-        } pop();
     }
 
     display(){
