@@ -22,11 +22,11 @@ Idea: falling shiny shapes
 let stars = [];
 star_num = 90;
 let co1 = 208;
-let col1 = 208;
+// let col1 = 208;
 let co2 = 214;
-let col2 = 214;
+// let col2 = 214;
 let co3 = 82;
-let col3 = 82;
+// let col3 = 82;
 let al1 = 100;
 let al;
 let al2 = 200;
@@ -38,7 +38,7 @@ function setup(){
     background(36,113,163);
 
     for( let j = 0; j < star_num; j++ ){
-        stars[j] = new Triangles(random(20,windowWidth-20),0,random(0,360),random(0.1,1));
+        stars[j] = new Triangles(random(20,windowWidth),0,random(0,360),random(0.1,1));
     }
 }
 
